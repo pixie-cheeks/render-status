@@ -28,10 +28,17 @@ async function getDeployStatus() {
 async function generateBadgeUrl() {
   const status = await getDeployStatus();
   const statusMap = {
-    succeeded: { label: 'Live', color: 'brightgreen' },
-    failed: { label: 'Failed', color: 'red' },
-    in_progress: { label: 'Deploying', color: 'blue' },
+    created: { label: 'Deploying', color: 'blue' },
+    queued: { label: 'Deploying', color: 'blue' },
+    build_in_progress: { label: 'Deploying', color: 'blue' },
+    update_in_progress: { label: 'Deploying', color: 'blue' },
+    live: { label: 'Live', color: 'brightgreen' },
+    deactivated: { label: 'Canceled', color: 'grey' },
+    build_failed: { label: 'Failed', color: 'red' },
+    update_failed: { label: 'Failed', color: 'red' },
     canceled: { label: 'Canceled', color: 'grey' },
+    pre_deploy_in_progress: { label: 'Deploying', color: 'blue' },
+    pre_deploy_failed: { label: 'Failed', color: 'red' },
     unknown: { label: 'Unknown', color: 'lightgrey' }
   };
 
