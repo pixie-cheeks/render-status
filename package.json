@@ -1,5 +1,5 @@
 {
-  "name": "render-status-badge",
+  "name": "render-status-badge-forked",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -78,9 +78,14 @@
     "vary": "^1.1.2"
   },
   "scripts": {
-      "badge": "node index.js"
-    },
-  "keywords": ["render", "status-badge", "ci-cd", "shields.io"],
+    "badge": "node index.js"
+  },
+  "keywords": [
+    "render",
+    "status-badge",
+    "ci-cd",
+    "shields.io"
+  ],
   "author": "Milton Vafana",
   "license": "ISC",
   "type": "commonjs"
